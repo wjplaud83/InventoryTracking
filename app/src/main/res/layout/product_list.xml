@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pro_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/pro_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/pro_image"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Product Name"
+        android:layout_toRightOf="@+id/pro_image" />
+
+    <TextView
+        android:id="@+id/pro_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pro_name"
+        android:layout_toEndOf="@+id/pro_image"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:text="Supplied by: Generic Supplier"
+        android:layout_toRightOf="@+id/pro_image" />
+
+    <TextView
+        android:id="@+id/pro_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="Quantity: 10"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/pro_supplier"
+        android:layout_toEndOf="@+id/pro_image"
+        android:layout_toRightOf="@+id/pro_image" />
+
+    <TextView
+        android:id="@+id/pro_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Price: $9.99"
+        android:layout_below="@+id/pro_quantity"
+        android:layout_alignStart="@+id/pro_quantity"
+        android:layout_alignLeft="@+id/pro_quantity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sell_item"
+        android:id="@+id/sell_button"
+        android:layout_alignBottom="@+id/pro_price"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+
+    tools:context="com.applaudstudios.android.inventorytracking.ProductDetail">
+
+    <RelativeLayout
+        android:id="@+id/detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#3F51B5"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentLeft="true">
+
+        <Button
+            android:id="@+id/btn_back_to_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="backToList"
+            android:text="@string/back"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dt_pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Some Product Name" />
+
+            <TextView
+                android:id="@+id/dt_pro_supplier"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                tools:text="Supplied by: Generic Supplier" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/extra_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/dt_pro_image"
+        android:layout_below="@+id/dt_pro_image"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignLeft="@+id/dt_pro_image">
+
+        <TextView
+            android:id="@+id/dt_pro_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            tools:text="Price: $ 9.99" />
+
+        <TextView
+            android:id="@+id/dt_pro_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            tools:text="Quantity: 10" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dt_pro_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detail_header"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:id="@+id/add_items_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/extra_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dt_plus_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="150dp"
+            android:onClick="addItems"
+            android:layout_height="wrap_content"
+            android:text="@string/dt_add_items" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_items_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_items_set"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dt_sub_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="150dp"
+            android:onClick="removeItems"
+            android:layout_height="wrap_content"
+            android:text="@string/dt_remove_items" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dt_btn_order_more"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="orderMore"
+        android:text="@string/order_more"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/dt_btn_delete_product"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#F44336"
+        android:onClick="deleteProduct"
+        android:text="@string/delete_product"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">InventoryTracking</string>
+    <string name="quantity">"Quantity: "</string>
+    <string name="supplied_by">"Supplied by: "</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_new_product_header">Add A New Product</string>
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_price">Price</string>
+    <string name="hint_product_initial_quantity">Initial Quantity</string>
+    <string name="hint_product_supplier">Supplier</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="order_more">Order More</string>
+    <string name="email_address">wjplaud83@gmail.com</string>
+    <string name="request_for_a_new">"Request for a new "</string>
+    <string name="shipment">" shipment"</string>
+    <string name="hello">Hello,\n\n</string>
+    <string name="request_main">"We would like to request a new shipment of "</string>
+    <string name="units">" units by "</string>
+    <string name="unit_price">Price: $</string>
+    <string name="sell_item">Sell Item</string>
+    <string name="empty_list_text">There are no products on the database. To add a product, click on the \"Add Product\" button on top.</string>
+    <string name="empty_warning">There are empty fields. Please input something in all fields to continue.</string>
+    <string name="back">Back</string>
+    <string name="delete_product_question">Delete Product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="dt_add_items">Add Items</string>
+    <string name="dt_remove_items">Remove Items</string>
+    <string name="products">"Products: "</string>
+    <string name="no_inventory">There are no items left to sell.</string>
+    <string name="empty_sub">There must be a value before we can subtract items to the existing quantity</string>
+    <string name="larger_than_current">The value is larger than the current inventory.</string>
+    <string name="empty_add">There must be a value before we can add items to the existing quantity.</string>
+</resources>
