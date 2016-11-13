@@ -25,7 +25,7 @@ public final class ImageTools {
         int originalWidth = inputBitmap.getWidth();
         int originalHeight = inputBitmap.getHeight();
 
-        Bitmap scaledBitmap = Bitmap.createScaledBitmap(inputBitmap, originalWidth/4, originalHeight/4, true);
+        Bitmap scaledBitmap = Bitmap.createScaledBitmap(inputBitmap, originalWidth / 4, originalHeight / 4, true);
 
         Bitmap processedBitmap;
 

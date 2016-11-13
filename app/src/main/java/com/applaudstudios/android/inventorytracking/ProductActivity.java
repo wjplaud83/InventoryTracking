@@ -26,7 +26,6 @@ public class ProductActivity extends AppCompatActivity {
     private int productCount;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,10 +75,9 @@ public class ProductActivity extends AppCompatActivity {
 
     public void checkEmptyList() {
         TextView emptyListTextView = (TextView) findViewById(com.applaudstudios.android.inventorytracking.R.id.empty_list_text_view);
-        if (mProductList.size() > 0){
+        if (mProductList.size() > 0) {
             emptyListTextView.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             emptyListTextView.setVisibility(View.VISIBLE);
         }
     }
